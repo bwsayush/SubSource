@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="36109" started-at="2021-02-25T10:58:57Z" finished-at="2021-02-25T10:59:33Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@55f3ddb1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="36109" started-at="2021-02-25T10:58:57Z" finished-at="2021-02-25T10:59:33Z">
+      <class name="Parallel.ParallelRun">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Parallel.ParallelRun@55f3ddb1]" name="setUpClass" is-config="true" duration-ms="1035" started-at="2021-02-25T10:58:57Z" finished-at="2021-02-25T10:58:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@55f3ddb1]" name="runScenario" duration-ms="26225" started-at="2021-02-25T10:58:58Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-25T10:59:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check Company deatails"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test the Company functionality of Subsource]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@55f3ddb1]" name="runScenario" duration-ms="31276" started-at="2021-02-25T10:58:58Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-25T10:59:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check Shop deatails"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To test the Shoppage functionality of Subsource]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Parallel.ParallelRun@55f3ddb1]" name="tearDownClass" is-config="true" duration-ms="3771" started-at="2021-02-25T10:59:29Z" finished-at="2021-02-25T10:59:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Parallel.ParallelRun -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
