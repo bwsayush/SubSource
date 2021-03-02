@@ -1,25 +1,25 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "c7ffbd94-e2cf-434e-aaa1-325a6bc70a48",
+    "id": "7d77b9eb-14dd-4dfb-8c7d-3ec08ee8049f",
     "feature": "To test the Company functionality of Subsource",
     "scenario": "Check Company deatails",
-    "start": 1614250738598,
+    "start": 1614670620914,
     "group": 13,
     "content": "",
     "tags": "",
-    "end": 1614250764517,
+    "end": 1614670646009,
     "className": "passed"
   },
   {
-    "id": "9340a6b1-18c6-491f-96dd-b7b508bc0ef3",
+    "id": "b6e83016-2376-4e52-b778-0988aef4279d",
     "feature": "To test the Shoppage functionality of Subsource",
     "scenario": "Check Shop deatails",
-    "start": 1614250738525,
+    "start": 1614670620821,
     "group": 14,
     "content": "",
     "tags": "",
-    "end": 1614250769572,
+    "end": 1614670653581,
     "className": "passed"
   }
 ]);

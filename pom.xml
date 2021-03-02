@@ -103,6 +103,7 @@
 				<configuration>
 					<includes>
 						<include>**/ParallelRun.java</include>
+						<!-- <include>**/Runner.java</include> -->
 					</includes>
 					<parallel>methods</parallel>
 					<threadCount>4</threadCount>
