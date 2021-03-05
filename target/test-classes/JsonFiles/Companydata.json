@@ -1,7 +1,7 @@
 {
 	"companydetails": [
 		{
-			"companyname": "Hello@123",
+			"companyname": "BWS@123",
 			"EIN": "456325985",
 			"Address": "ZirakPur",
 			"Address2": "Chandigrah",
@@ -15,7 +15,7 @@
 	],
 	"shopDetails": [
 		{
-			"shop": "12-020",
+			"shop": "15-545",
 			"email": "bwsxyz@gmail.com",
 			"region": "Central Region",
 			"address1": "ascsa",
