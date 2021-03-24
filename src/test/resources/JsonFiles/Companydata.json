@@ -1,38 +1,269 @@
 {
-	"companydetails": [
+	"companyDetails": [
 		{
-			"companyname": "Zirakpur@123",
-			"EIN": "456325642",
-			"Address": "ZirakPur",
+			"companyname": "",
+			"EIN": "",
+			"Address": "",
 			"Address2": "Chandigrah",
-			"City": "punjab",
+			"City": "",
 			"State": "Alaska",
-			"ZipCode": "5465154",
+			"ZipCode": "",
+			"PhoneNumber": "",
+			"mail": "busines56@gmail.com",
+			"payroll": "9701155"
+		}
+	],
+	"companyDetailsEinFormat": [
+		{
+			"companyname": "Test1",
+			"EIN": "62546984",
+			"Address": "Zirakpur",
+			"Address2": "Chandigrah",
+			"City": "Baltana",
+			"State": "Alaska",
+			"ZipCode": "56324",
 			"PhoneNumber": "9560209404",
 			"mail": "busines56@gmail.com",
 			"payroll": "9701155"
 		}
 	],
-	"shopDetails": [
+	"companyDetailsEinVerify": [
 		{
-			"shop": "15-545",
-			"email": "bwsxyz@gmail.com",
-			"region": "Central Region",
-			"address1": "ascsa",
-			"addess2": "sdfsavv",
-			"city": "caliasc",
-			"state": "Alabama",
-			"zipCode": "45623",
-			"rent": "546",
-			"cost": "451",
-			"food_Cost_Distributor": "Saladinos",
-			"company": "Children Hospital Subs LLC",
-			"new_Hire": "ascb@gmail.com",
-			"weekly_Schedule": "asfhb@gmail.com",
-			"engagement": "fsaxvc@gmail.com",
-			"BGC": "sancbs@gmail.com",
-			"E-Verify": "afaVhb@gmail.com",
-			"applicant": "abdzfn@gmail.com"
+			"companyname": "Test2",
+			"EIN": "",
+			"Address": "Zirakpur",
+			"Address2": "Chandigrah",
+			"City": "Baltana",
+			"State": "Alaska",
+			"ZipCode": "56324",
+			"PhoneNumber": "9560209404",
+			"mail": "busines56@gmail.com",
+			"payroll": "9701155"
+		}
+	],
+	"companyDetailsSaveButton": [
+		{
+			"companyname": "Test3",
+			"EIN": "856985426",
+			"Address": "Zirakpur",
+			"Address2": "Chandigrah",
+			"City": "Baltana",
+			"State": "Alaska",
+			"ZipCode": "56324",
+			"PhoneNumber": "9560209404",
+			"mail": "busines56@gmail.com",
+			"payroll": "9701155"
+		}
+	],
+	"companyDetailsSaveVerify": [
+		{
+			"companyname": "Test4",
+			"EIN": "",
+			"Address": "Zirakpur",
+			"Address2": "Chandigrah",
+			"City": "Baltana",
+			"State": "Alaska",
+			"ZipCode": "56324",
+			"PhoneNumber": "",
+			"mail": "busines56@gmail.com",
+			"payroll": "9701155"
+		}
+	],
+	"companyDetailsZipcodeVerify": [
+		{
+			"companyname": "Test5",
+			"EIN": "652369854",
+			"Address": "Zirakpur",
+			"Address2": "Chandigrah",
+			"City": "Baltana",
+			"State": "Alaska",
+			"ZipCode": "1236A",
+			"PhoneNumber": "",
+			"mail": "busines56@gmail.com",
+			"payroll": "9701155"
+		}
+	],
+	"companyDetailsphoneVerify": [
+		{
+			"companyname": "Test6",
+			"EIN": "802040606",
+			"Address": "Zirakpur",
+			"Address2": "Chandigrah",
+			"City": "Baltana",
+			"State": "Alaska",
+			"ZipCode": "10006",
+			"PhoneNumber": "956020940A",
+			"mail": "busines56@gmail.com",
+			"payroll": "9701155"
+		}
+	],
+	"companyDetailstoggleVerify": [
+		{
+			"companyname": "Test7",
+			"EIN": "802040606",
+			"Address": "Zirakpur",
+			"Address2": "Chandigrah",
+			"City": "Baltana",
+			"State": "Alaska",
+			"ZipCode": "10006",
+			"PhoneNumber": "9560209404",
+			"mail": "busines56@gmail.com",
+			"payroll": "9701155"
+		}
+	],
+	"companyDetailsEVerifyCredentials": [
+		{
+			"E_User_Name": "owner",
+			"E_Password": "2551Woodland@"
+		}
+	],
+	"companyDetailsCancelVerify": [
+		{
+			"companyname": "Test8",
+			"EIN": "965425856",
+			"Address": "Zirakpur",
+			"Address2": "Chandigrah",
+			"City": "Baltana",
+			"State": "Alaska",
+			"ZipCode": "10006",
+			"PhoneNumber": "9560209404",
+			"mail": "busines56@gmail.com",
+			"payroll": "9701155"
+		}
+	],
+	"companyDetailsMessageVerify": [
+		{
+			"companyname": "Test9",
+			"EIN": "986542154",
+			"Address": "Zirakpur",
+			"Address2": "Chandigrah",
+			"City": "Baltana",
+			"State": "Alaska",
+			"ZipCode": "10006",
+			"PhoneNumber": "9560209404",
+			"mail": "busines56@gmail.com",
+			"payroll": "9701155"
+		}
+	],
+	"companyDetailsMaxLenghtUsernameEverify": [
+		{
+			"E_User_Name": "aaaaaaaaaabbbbbbbbbbccccccccccddddddddddeeeeeeeeeeffffffffffgggggggggghhhhhhhhhhiiiiiiiiiijjjjjjjjj"
+		}
+	],
+	"companyDetailsEVerifyPassword": [
+		{
+			"E_Password": "2551Woodland@@@@@@@@@@@@@@@@@@@@@@@12345667654342312"
+		}
+	],
+	"companyDetailsEVerifyMaxPassword": [
+		{
+			"E_Password": "aaaaaaaaaabbbbbbbbbbccccccccccddddddddddeeeeeeeeeeffffffffffgggggggggghhhhhhhhhhiiiiiiiiiijjjjjjjj"
+		}
+	],
+	"companyDetailsNewAddition": [
+		{
+			"companyname": "Test10",
+			"EIN": "865945212",
+			"Address": "Zirakpur",
+			"Address2": "Chandigrah",
+			"City": "Baltana",
+			"State": "Alaska",
+			"ZipCode": "10024",
+			"PhoneNumber": "9560209404",
+			"mail": "busines56@gmail.com",
+			"payroll": "9701155",
+			"E_User_Name": "owner",
+			"E_Password": "2551Woodland@"
+		}
+	],
+	"companyDetailsUpdation": [
+		{
+			"companyname": "Test11",
+			"EIN": "865945300",
+			"Address": "Zirakpur",
+			"Address2": "Chandigrah",
+			"City": "Baltana",
+			"State": "Alaska",
+			"ZipCode": "10024",
+			"PhoneNumber": "9560209404",
+			"mail": "busines56@gmail.com",
+			"payroll": "9701155",
+			"E_User_Name": "owner",
+			"E_Password": "2551Woodland@"
+		}
+	],
+	"companyDetailsDeletion": [
+		{
+			"companyname": "Test12",
+			"EIN": "654987365",
+			"Address": "Zirakpur",
+			"Address2": "Chandigrah",
+			"City": "Baltana",
+			"State": "Alaska",
+			"ZipCode": "10024",
+			"PhoneNumber": "9560209404",
+			"mail": "busines56@gmail.com",
+			"payroll": "9701155",
+			"E_User_Name": "ownerOwner",
+			"E_Password": "2551Woodlad@"
+		}
+	],
+	"companyDetailsDeletionConfimation": [
+		{
+			"companyname": "Test13",
+			"EIN": "5639657125",
+			"Address": "Zirakpur",
+			"Address2": "Chandigrah",
+			"City": "Baltana",
+			"State": "Alaska",
+			"ZipCode": "10024",
+			"PhoneNumber": "9560209404",
+			"mail": "busines56@gmail.com",
+			"payroll": "9701155",
+			"E_User_Name": "ownerOwner",
+			"E_Password": "2551Woodlad@"
+		}
+	],
+	"companyDetailsDuplicateEIN": [
+		{
+			"companyname": "Test14",
+			"EIN": "203050869",
+			"Address": "Zirakpur",
+			"Address2": "Chandigrah",
+			"City": "Baltana",
+			"State": "Alaska",
+			"ZipCode": "10024",
+			"PhoneNumber": "9560209404",
+			"mail": "busines56@gmail.com",
+			"payroll": "9701155"
+		}
+	],
+	"companyDetailsCheckSaveData": [
+		{
+			"companyname": "Test15",
+			"EIN": "213050869",
+			"Address": "Zirakpur",
+			"Address2": "Chandigrah",
+			"City": "Baltana",
+			"State": "Alaska",
+			"ZipCode": "10024",
+			"PhoneNumber": "9560209404",
+			"mail": "busines56@gmail.com",
+			"payroll": "9701155"
+		}
+	],
+	"companyDetailsDuplicateComapanyName": [
+		{
+			"companyname": "CompanyTest",
+			"EIN": "456398756",
+			"Address": "Zirakpur",
+			"Address2": "Chandigrah",
+			"City": "Baltana",
+			"State": "Alaska",
+			"ZipCode": "10006",
+			"PhoneNumber": "9560209404",
+			"mail": "busines56@gmail.com",
+			"payroll": "9701155"
 		}
 	]
 }

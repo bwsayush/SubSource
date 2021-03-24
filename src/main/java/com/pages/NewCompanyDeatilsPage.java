@@ -1,10 +1,13 @@
 package com.pages;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import java.util.*;
+
+import org.junit.Assert;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import org.openqa.selenium.support.ui.Select;
+import com.qa.factory.DriverFactory;
 import com.qa.factory.WebDriverUtil;
 
 public class NewCompanyDeatilsPage {
@@ -41,6 +44,27 @@ public class NewCompanyDeatilsPage {
 	@FindBy(xpath = "//button[contains(text(),'Save')]")
 	WebElement save_Button;
 
+	@FindBy(css = "button[icon = 'pi pi-upload']")
+	WebElement upload_Button;
+
+	@FindBy(xpath = "//button[contains(text(),'Cancel')]")
+	WebElement cancel_Button;
+
+	@FindBy(css = "div[role = 'checkbox']")
+	WebElement toggle;
+
+	@FindBy(css = "input[formcontrolname='EverifyUserName']")
+	WebElement Everify_User_Name;
+
+	@FindBy(css = "input[formcontrolname='EverifyPassword']")
+	WebElement Everify_Password;
+
+	@FindBy(xpath = "//p-inputswitch[@formcontrolname = 'isAcaEnabled']/div[@role = 'checkbox']")
+	WebElement EnabledACA;
+
+	@FindBy(xpath = "//button[@type='button']/span[contains(text(),'Yes')]/parent::button")
+	WebElement delete_Button;
+
 	WebDriver driver;
 
 	public NewCompanyDeatilsPage(WebDriver driver) {
@@ -54,7 +78,7 @@ public class NewCompanyDeatilsPage {
 
 	public void enter_EIN(String number) {
 		WebDriverUtil.waitForElementVisiblity(eIN);
-		WebDriverUtil.passTheValueUsingJavaScript(eIN,number);
+		WebDriverUtil.passTheValueUsingJavaScript(eIN, number);
 		eIN.click();
 	}
 
@@ -94,6 +118,147 @@ public class NewCompanyDeatilsPage {
 
 	public void click_Save_Button() {
 		save_Button.click();
+	}
+
+	public void click_Upload_Button() {
+		upload_Button.click();
+	}
+
+	public void click_Save_Button_And_Check_Data(String searccompany_Name) throws Throwable {
+		save_Button.click();
+		Thread.sleep(2000);
+		CompanyDetailsPage companyAccount = new CompanyDetailsPage(DriverFactory.getDriver());
+		companyAccount.text_Of_Success_Message();
+		WebElement company_Name = driver
+				.findElement(By.xpath("//a[contains(text(),'" + searccompany_Name + "')]/parent::div/a"));
+		company_Name.click();
+		Thread.sleep(4000);
+		cancel_Button.click();
+	}
+
+	public void click_Save_Button_And_Check_Data_Edit(String searccompany_Name) throws Throwable {
+		save_Button.click();
+		Thread.sleep(2000);
+		CompanyDetailsPage companyAccount = new CompanyDetailsPage(DriverFactory.getDriver());
+		companyAccount.text_Of_Success_Message();
+		WebElement company_Name1 = driver
+				.findElement(By.xpath("//a[contains(text(),'" + searccompany_Name + "')]/parent::div/a"));
+		company_Name1.click();
+		Thread.sleep(2000);
+		company_Name.sendKeys("TestUpdated");
+	}
+
+	public void company_Match(String searccompany_Name) throws Throwable {
+		save_Button.click();
+		Thread.sleep(2000);
+
+		WebElement company_Name_Searched = driver
+				.findElement(By.xpath("//a[contains(text(),'" + searccompany_Name + "')]/parent::div/a"));
+
+		System.out.println(company_Name_Searched.getText());
+		String company1 = company_Name_Searched.getText();
+
+		WebElement company_Name = driver.findElement(
+				By.xpath("//a[contains(text(),'" + searccompany_Name + "')]/parent::div/following::td[6]"));
+		company_Name.click();
+
+		WebElement company_Name_Found = driver
+				.findElement(By.xpath("//b[contains(text(),'" + searccompany_Name + "')]"));
+
+		System.out.println(company_Name_Found.getText());
+		String company2 = company_Name_Found.getText();
+
+		if (company1.equals(company2)) {
+			System.out.println("Company Matched");
+		} else {
+			System.out.println("Company Not matched");
+		}
+		Assert.assertEquals(company1, company2);
+		Thread.sleep(2000);
+	}
+
+	public void click_Yes_Button() throws InterruptedException {
+		delete_Button.click();
+		Thread.sleep(4000);
+	}
+
+	public void upadteAndCheckForUpdate(String searccompany_Name) throws Throwable {
+		save_Button.click();
+		Thread.sleep(2000);
+		CompanyDetailsPage companyAccount = new CompanyDetailsPage(DriverFactory.getDriver());
+		companyAccount.text_Of_Success_Message();
+		WebElement company_Name1 = driver
+				.findElement(By.xpath("//a[contains(text(),'" + searccompany_Name + "')]/parent::div/a"));
+		company_Name1.click();
+		Thread.sleep(4000);
+	}
+
+	public void drop() throws InterruptedException {
+		Select dropDown = new Select(drop_Down);
+		List<WebElement> elementCount = dropDown.getOptions();
+		int itemSize = elementCount.size();
+		System.out.println(
+				"=================================================================================================================================================================");
+		System.out.println("Size of DropDown options is : " + itemSize + "\n");
+		System.out.println("DropDown options are : ");
+		for (int i = 1; i < itemSize; i++) {
+			String optionsValue = elementCount.get(i).getText();
+			System.out.println(optionsValue);
+		}
+		System.out.println(
+				"=================================================================================================================================================================");
+	}
+
+	public void drop_Down_Alphabetical_Order() throws InterruptedException {
+		Select dropDown = new Select(drop_Down);
+		List<WebElement> elementCount = dropDown.getOptions();
+		List<String> options = new ArrayList<String>();
+		for (WebElement optionElement : elementCount) {
+			options.add(optionElement.getText());
+		}
+		options.remove("Select");
+		System.out.println("Options in dropdown with Default order :" + options);
+		List<String> tempList = new ArrayList<String>(options);
+		Collections.sort(tempList);
+		System.out.println("Sorted List " + tempList);
+		boolean ifSortedAscending = options.equals(tempList);
+		if (ifSortedAscending) {
+			System.out.println("DropDown is in Alphabetical order...");
+		} else
+			System.out.println("DropDown is not in Alphabetical order...");
+	}
+
+	public void toggle() throws InterruptedException {
+		WebDriverUtil.waitForElementVisiblity(toggle);
+		Thread.sleep(2000);
+		toggle.click();
+		Thread.sleep(1000);
+		toggle.click();
+		Thread.sleep(1000);
+	}
+
+	public void checkToggle() throws InterruptedException {
+		toggle.click();
+		Thread.sleep(2000);
+	}
+
+	public void ACA_toggle() throws InterruptedException {
+		EnabledACA.click();
+		Thread.sleep(1000);
+		EnabledACA.click();
+		Thread.sleep(1000);
+	}
+
+	public void enter_username_Everify(String EverifyUsername) {
+		Everify_User_Name.sendKeys(EverifyUsername);
+	}
+
+	public void enter_Password_Everify(String EverifyPassword) {
+		Everify_Password.sendKeys(EverifyPassword);
+	}
+
+	public void click_Cancel_Button() {
+		cancel_Button.click();
 	}
 
 }

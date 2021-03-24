@@ -1,13 +1,33 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-02T07:37:00.914Z",
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1490000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate to the company page",
+            "match": {
+              "location": "Parallel.CompanyTest.user_navigate_to_the_company_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-24T07:46:12.940Z",
         "before": [
           {
             "result": {
-              "duration": 5000000,
               "status": "passed"
             },
             "match": {
@@ -16,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 3501000000,
+              "duration": 2419000000,
               "status": "passed"
             },
             "match": {
@@ -25,7 +45,7 @@
           },
           {
             "result": {
-              "duration": 10716000000,
+              "duration": 11465000000,
               "status": "passed"
             },
             "match": {
@@ -33,14 +53,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "Check Company deatails",
+        "line": 217,
+        "name": "Check company page import file duplicate EIN",
         "description": "",
-        "id": "to-test-the-company-functionality-of-subsource;check-company-deatails",
+        "id": "to-test-the-company-functionality-of-subsource;check-company-page-import-file-duplicate-ein",
         "after": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 6000000,
               "status": "passed"
             },
             "match": {
@@ -49,7 +69,7 @@
           },
           {
             "result": {
-              "duration": 1987000000,
+              "duration": 890000000,
               "status": "passed"
             },
             "match": {
@@ -62,51 +82,71 @@
         "steps": [
           {
             "result": {
-              "duration": 3553000000,
+              "duration": 3299000000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user navigate to the company page",
+            "line": 218,
+            "name": "Go to import page",
             "match": {
-              "location": "Parallel.CompanyTest.user_navigate_to_the_company_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2405000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user enter the valid creadentails",
-            "match": {
-              "location": "Parallel.CompanyTest.user_enter_the_valid_creadentails()"
+              "location": "Parallel.CompanyTest.Go_to_import_page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 114000000,
+              "duration": 10366000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "click on Save Button",
+            "line": 219,
+            "name": "select the file to check add new functionality and click on upload button and scroll down",
             "match": {
-              "location": "Parallel.CompanyTest.click_on_save_button()"
+              "location": "Parallel.CompanyTest.select_the_file_to_check_add_new_functionality_and_click_on_upload_button_and_scroll_down()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2202000000,
+              "status": "passed"
+            },
+            "line": 220,
+            "name": "click on Cancel Button",
+            "match": {
+              "location": "Parallel.CompanyTest.click_on_Cancel_Button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2780000000,
+              "duration": 3189000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user delete the company from subsource",
+            "line": 221,
+            "name": "click on company to check data",
             "match": {
-              "location": "Parallel.CompanyTest.user_delete_the_company_from_subsource()"
+              "location": "Parallel.CompanyTest.click_on_company_to_check_data()"
             },
-            "keyword": "Then "
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6527000000,
+              "status": "passed"
+            },
+            "line": 222,
+            "name": "delete added company",
+            "match": {
+              "location": "Parallel.CompanyTest.delete_added_company()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@company"
+          },
+          {
+            "name": "@TC_046"
           }
         ]
       }
@@ -116,125 +156,15 @@
     "id": "to-test-the-company-functionality-of-subsource",
     "keyword": "Feature",
     "uri": "file:src/test/resources/Parallel/Company.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
+    "tags": [
       {
-        "start_timestamp": "2021-03-02T07:37:00.821Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Parallel.ApplicationHooks.getProperty()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3795000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Parallel.ApplicationHooks.launchBrowser()"
-            }
-          },
-          {
-            "result": {
-              "duration": 11299000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Parallel.ApplicationHooks.navigate_to_Subsource()"
-            }
-          }
-        ],
-        "line": 3,
-        "name": "Check Shop deatails",
-        "description": "",
-        "id": "to-test-the-shoppage-functionality-of-subsource;check-shop-deatails",
-        "after": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Parallel.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 911000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Parallel.ApplicationHooks.quitBrowser()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 6103000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user navigate to the Shop page",
-            "match": {
-              "location": "Parallel.ShopTest.user_navigate_to_the_shop_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3827000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user enter the valid creadentails Of Shop page",
-            "match": {
-              "location": "Parallel.ShopTest.user_enter_the_valid_creadentails_of_shop_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 167000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "click on Shop page Save Button",
-            "match": {
-              "location": "Parallel.ShopTest.click_on_shop_page_save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6517000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user delete the Shop from subsource",
-            "match": {
-              "location": "Parallel.ShopTest.user_delete_the_shop_from_subsource()"
-            },
-            "keyword": "Then "
-          }
-        ]
+        "name": "@company",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
       }
-    ],
-    "name": "To test the Shoppage functionality of Subsource",
-    "description": "",
-    "id": "to-test-the-shoppage-functionality-of-subsource",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/Parallel/Shop.feature",
-    "tags": []
+    ]
   }
 ]
