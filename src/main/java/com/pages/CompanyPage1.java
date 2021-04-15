@@ -1,5 +1,4 @@
 package com.pages;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.qa.factory.WebDriverUtil;
 
-public class CompanyDetailsPage {
+public class CompanyPage1 {
 	@FindBy(xpath = "//i[@class='fa fa-ellipsis-v']")
 	WebElement toggle_Button;
 
@@ -56,7 +55,7 @@ public class CompanyDetailsPage {
 
 	WebDriver driver;
 
-	public CompanyDetailsPage(WebDriver driver) {
+	public CompanyPage1(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -103,7 +102,7 @@ public class CompanyDetailsPage {
 
 	public void select_File_And_Click_Upload_Button() throws Throwable {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanyAdd.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanyAdd.xlsx");
 		Thread.sleep(2000);
 		upload_Button.click();
 		Thread.sleep(2000);
@@ -114,7 +113,7 @@ public class CompanyDetailsPage {
 
 	public void select_File_To_Be_Updated_And_Click_Upload_Button() throws Throwable {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanyUpdate.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanyUpdate.xlsx");
 		Thread.sleep(2000);
 		upload_Button.click();
 		Thread.sleep(2000);
@@ -125,7 +124,7 @@ public class CompanyDetailsPage {
 
 	public void update_Company_Through_Import_File() throws Throwable {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanyUpdateAddress.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanyUpdateAddress.xlsx");
 		Thread.sleep(2000);
 		upload_Button.click();
 		Thread.sleep(2000);
@@ -136,7 +135,7 @@ public class CompanyDetailsPage {
 
 	public void select_File_To_Update_Phone_And_Click_Upload_Button() throws Throwable {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanyUpdatePhone.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanyUpdatePhone.xlsx");
 		Thread.sleep(2000);
 		upload_Button.click();
 		Thread.sleep(2000);
@@ -144,7 +143,7 @@ public class CompanyDetailsPage {
 
 	public void select_File_To_Update_Everify_And_Click_Upload_Button() throws Throwable {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanyUpdateEverify.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanyUpdateEverify.xlsx");
 		Thread.sleep(2000);
 		upload_Button.click();
 		Thread.sleep(2000);
@@ -152,7 +151,7 @@ public class CompanyDetailsPage {
 
 	public void select_File_To_Update_Everify_Username_And_Click_Upload_Button() throws Throwable {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanyUpdateEverifyUsername.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanyUpdateEverifyUsername.xlsx");
 		Thread.sleep(2000);
 		upload_Button.click();
 		Thread.sleep(2000);
@@ -160,7 +159,7 @@ public class CompanyDetailsPage {
 
 	public void select_File_To_Check_Duplicate_EIN_And_Click_Upload_Button() throws Throwable {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanyDuplicateEIN.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanyDuplicateEIN.xlsx");
 		Thread.sleep(2000);
 		upload_Button.click();
 		Thread.sleep(2000);
@@ -171,7 +170,7 @@ public class CompanyDetailsPage {
 
 	public void select_File_To_Check_Invalid_Zip_And_Click_Upload_Button() throws Throwable {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanyInvalidZip.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanyInvalidZip.xlsx");
 		Thread.sleep(2000);
 		upload_Button.click();
 		Thread.sleep(2000);
@@ -182,7 +181,7 @@ public class CompanyDetailsPage {
 
 	public void select_File_To_Check_Add_New_And_Click_Upload_Button() throws Throwable {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanyAddNew.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanyAddNew.xlsx");
 		Thread.sleep(2000);
 		upload_Button.click();
 		Thread.sleep(2000);
@@ -193,7 +192,7 @@ public class CompanyDetailsPage {
 
 	public void Add_New_Company() throws Throwable {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanyAddAndDelete.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanyAddAndDelete.xlsx");
 		Thread.sleep(2000);
 		upload_Button.click();
 		Thread.sleep(2000);
@@ -204,7 +203,7 @@ public class CompanyDetailsPage {
 
 	public void update_Company_State() throws Throwable {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanySatateUpdate.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanySatateUpdate.xlsx");
 		Thread.sleep(2000);
 		upload_Button.click();
 		Thread.sleep(2000);
@@ -212,7 +211,7 @@ public class CompanyDetailsPage {
 
 	public void update_Company_City() throws Throwable {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanyUpdateCity.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanyUpdateCity.xlsx");
 		Thread.sleep(2000);
 		upload_Button.click();
 		Thread.sleep(2000);
@@ -220,7 +219,7 @@ public class CompanyDetailsPage {
 
 	public void check_EIN() throws Throwable {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanyInvalidEIN.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanyInvalidEIN.xlsx");
 		Thread.sleep(2000);
 		upload_Button.click();
 		Thread.sleep(2000);
@@ -231,7 +230,7 @@ public class CompanyDetailsPage {
 
 	public void update_Address() throws Throwable {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanyAddressUpdate.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanyAddressUpdate.xlsx");
 		Thread.sleep(2000);
 		upload_Button.click();
 		Thread.sleep(2000);
@@ -242,7 +241,7 @@ public class CompanyDetailsPage {
 
 	public void update_Company_Name() throws Throwable {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanyNameUpdate.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanyNameUpdate.xlsx");
 		Thread.sleep(2000);
 		upload_Button.click();
 		Thread.sleep(2000);
@@ -253,7 +252,7 @@ public class CompanyDetailsPage {
 
 	public void delete_Company_Through_Import_File() throws Throwable {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanyDelete.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanyDelete.xlsx");
 		Thread.sleep(2000);
 		upload_Button.click();
 		Thread.sleep(2000);
@@ -272,12 +271,12 @@ public class CompanyDetailsPage {
 
 	public void upload_File() throws InterruptedException {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\CompanyImportFile.xlsx");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\CompanyImportFile.xlsx");
 	}
 
 	public void upload_Wrong_File_Format() throws InterruptedException {
 		Thread.sleep(2000);
-		select_File.sendKeys("E:\\SubSource\\CodeBase\\Import\\Wrong_Format.txt");
+		select_File.sendKeys("E:\\SubSource\\CodeBase\\CompanyImport\\Wrong_Format.txt");
 	}
 
 	public void findElementUsingText(String searccompany_Name) {

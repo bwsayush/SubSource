@@ -1,11 +1,11 @@
 E:\SubSource\CodeBase\src\main\java\com\pages\AccountSettings.java
-E:\SubSource\CodeBase\src\main\java\com\pages\NewShopDeatilsPage.java
 E:\SubSource\CodeBase\src\main\java\com\pages\LogInPage.java
 E:\SubSource\CodeBase\src\main\java\com\qa\util\JSONFileClass.java
-E:\SubSource\CodeBase\src\main\java\com\pages\CompanyDetailsPage.java
 E:\SubSource\CodeBase\src\main\java\com\qa\factory\DriverFactory.java
+E:\SubSource\CodeBase\src\main\java\com\pages\CompanyPage2.java
+E:\SubSource\CodeBase\src\main\java\com\pages\ShopPage2.java
+E:\SubSource\CodeBase\src\main\java\com\pages\ShopPage1.java
 E:\SubSource\CodeBase\src\main\java\com\pages\HomePage.java
-E:\SubSource\CodeBase\src\main\java\com\pages\ShopDetailsPage.java
 E:\SubSource\CodeBase\src\main\java\com\qa\factory\WebDriverUtil.java
-E:\SubSource\CodeBase\src\main\java\com\pages\NewCompanyDeatilsPage.java
+E:\SubSource\CodeBase\src\main\java\com\pages\CompanyPage1.java
 E:\SubSource\CodeBase\src\main\java\com\qa\util\ConfigReader.java

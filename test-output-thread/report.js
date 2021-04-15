@@ -1,14 +1,14 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "a73683c1-1f22-4c04-9d09-3a31eb374c2b",
-    "feature": "To test the Company functionality of Subsource",
-    "scenario": "Check company page import file duplicate EIN",
-    "start": 1616571972940,
+    "id": "91e9eb3d-de06-4122-ba25-3fafba14d56f",
+    "feature": "Testing the Shop page functionality of Subsource",
+    "scenario": "Check shop page download sample file feature",
+    "start": 1618489102392,
     "group": 12,
     "content": "",
-    "tags": "@company,@tc_046,",
-    "end": 1616572014941,
+    "tags": "@shop,@tc_056,",
+    "end": 1618489153979,
     "className": "passed"
   }
 ]);

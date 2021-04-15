@@ -15,8 +15,8 @@ import io.cucumber.testng.CucumberOptions;
 					monochrome = true, 
 					dryRun = false, 
 					glue = {"Parallel"}, 
-					features = {"./src/test/resources/Parallel"},
-					tags = "@TC_046"
+					features = {"./src/test/resources/Parallel/Shop.feature"},
+					tags = "@TC_056"
 					
 				)
 

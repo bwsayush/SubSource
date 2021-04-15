@@ -18,4 +18,13 @@ public class JSONFileClass extends WebDriverException implements Serializable
 				JSONObject userLogIn = (JSONObject) obj;
 				return userLogIn;
 			}
+		
+		public JSONObject readJsonShop() throws IOException, ParseException 
+			{
+				JSONParser jsonParser1 = new JSONParser();
+				FileReader readerShop = new FileReader("E:\\SubSource\\CodeBase\\src\\test\\resources\\JsonFiles\\Shopdata.json");
+				Object obj1 = jsonParser1.parse(readerShop);
+				JSONObject userLogIn1 = (JSONObject) obj1;
+				return userLogIn1;
+			}
 	}

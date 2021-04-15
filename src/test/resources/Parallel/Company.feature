@@ -1,5 +1,5 @@
 @company
-Feature: To test the Company functionality of Subsource
+Feature: Testing the Company page functionality of Subsource
 
   Background: 
     Given user navigate to the company page

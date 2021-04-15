@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 import com.qa.factory.DriverFactory;
 import com.qa.factory.WebDriverUtil;
 
-public class NewCompanyDeatilsPage {
+public class CompanyPage2 {
 	@FindBy(xpath = "//input[@formcontrolname='CompanyName']")
 	WebElement company_Name;
 
@@ -66,7 +66,7 @@ public class NewCompanyDeatilsPage {
 
 	WebDriver driver;
 
-	public NewCompanyDeatilsPage(WebDriver driver) {
+	public CompanyPage2(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -126,7 +126,7 @@ public class NewCompanyDeatilsPage {
 	public void click_Save_Button_And_Check_Data(String searccompany_Name) throws Throwable {
 		save_Button.click();
 		Thread.sleep(2000);
-		CompanyDetailsPage companyAccount = new CompanyDetailsPage(DriverFactory.getDriver());
+		CompanyPage1 companyAccount = new CompanyPage1(DriverFactory.getDriver());
 		companyAccount.text_Of_Success_Message();
 		WebElement company_Name = driver
 				.findElement(By.xpath("//a[contains(text(),'" + searccompany_Name + "')]/parent::div/a"));
@@ -138,7 +138,7 @@ public class NewCompanyDeatilsPage {
 	public void click_Save_Button_And_Check_Data_Edit(String searccompany_Name) throws Throwable {
 		save_Button.click();
 		Thread.sleep(2000);
-		CompanyDetailsPage companyAccount = new CompanyDetailsPage(DriverFactory.getDriver());
+		CompanyPage1 companyAccount = new CompanyPage1(DriverFactory.getDriver());
 		companyAccount.text_Of_Success_Message();
 		WebElement company_Name1 = driver
 				.findElement(By.xpath("//a[contains(text(),'" + searccompany_Name + "')]/parent::div/a"));
@@ -166,7 +166,6 @@ public class NewCompanyDeatilsPage {
 
 		System.out.println(company_Name_Found.getText());
 		String company2 = company_Name_Found.getText();
-
 		if (company1.equals(company2)) {
 			System.out.println("Company Matched");
 		} else {
@@ -184,7 +183,7 @@ public class NewCompanyDeatilsPage {
 	public void upadteAndCheckForUpdate(String searccompany_Name) throws Throwable {
 		save_Button.click();
 		Thread.sleep(2000);
-		CompanyDetailsPage companyAccount = new CompanyDetailsPage(DriverFactory.getDriver());
+		CompanyPage1 companyAccount = new CompanyPage1(DriverFactory.getDriver());
 		companyAccount.text_Of_Success_Message();
 		WebElement company_Name1 = driver
 				.findElement(By.xpath("//a[contains(text(),'" + searccompany_Name + "')]/parent::div/a"));
@@ -220,6 +219,7 @@ public class NewCompanyDeatilsPage {
 		List<String> tempList = new ArrayList<String>(options);
 		Collections.sort(tempList);
 		System.out.println("Sorted List " + tempList);
+		Assert.assertEquals(options, tempList);
 		boolean ifSortedAscending = options.equals(tempList);
 		if (ifSortedAscending) {
 			System.out.println("DropDown is in Alphabetical order...");
